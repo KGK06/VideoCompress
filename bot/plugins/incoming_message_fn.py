@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-# (c) Shrimadhav U K / Akshay C / @AbirHasan2005
+# (c) Shrimadhav U K / Akshay C / @Itz_Me_Malayaali
 
 # the logging things
 
@@ -60,7 +60,7 @@ async def incoming_start_message_f(bot, update):
             if user.status == "kicked":
                await bot.send_message(
                    chat_id=update.chat.id,
-                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                   text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/ML_SupportGroup).",
                    parse_mode="markdown",
                    disable_web_page_preview=True
                )
@@ -82,7 +82,7 @@ async def incoming_start_message_f(bot, update):
         except Exception:
             await bot.send_message(
                 chat_id=update.chat.id,
-                text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+                text="Something went Wrong. Contact my [Support Group](https://t.me/ML_SupportGroup).",
                 parse_mode="markdown",
                 disable_web_page_preview=True)
             return
@@ -92,10 +92,10 @@ async def incoming_start_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Updates Channel', url='https://t.me/Discovery_Updates')
+                    InlineKeyboardButton('☘Updates Channel☘', url='https://t.me/ML_BotUpdates')
                 ],
                 [
-                    InlineKeyboardButton('Support Group', url='https://t.me/linux_repo')
+                    InlineKeyboardButton('🚨Support Group🚨', url='https://t.me/ML_SupportGroup')
                 ]
             ]
         ),
@@ -113,7 +113,7 @@ async def incoming_compress_message_f(bot, update):
           if user.status == "kicked":
              await bot.send_message(
                  chat_id=update.chat.id,
-                 text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/linux_repo).",
+                 text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/ML_SupportGroup).",
                  parse_mode="markdown",
                  disable_web_page_preview=True
              )
@@ -135,7 +135,7 @@ async def incoming_compress_message_f(bot, update):
       except Exception:
           await bot.send_message(
               chat_id=update.chat.id,
-              text="Something went Wrong. Contact my [Support Group](https://t.me/linux_repo).",
+              text="Something went Wrong. Contact my [Support Group](https://t.me/ML_SupportGroup).",
               parse_mode="markdown",
               disable_web_page_preview=True
           )
@@ -234,7 +234,7 @@ async def incoming_compress_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Show Bot Status', url=f'https://t.me/{LOG_CHANNEL}') # This will be username na ...
+                    InlineKeyboardButton('Show Bot Status', url=f'https://t.me/'HeVc_Compress_Logs') # This will be username na ...
                 ]
             ]
         ),
