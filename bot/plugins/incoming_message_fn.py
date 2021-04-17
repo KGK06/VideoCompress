@@ -234,7 +234,7 @@ async def incoming_compress_message_f(bot, update):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Show Bot Status', url=f'https://t.me/'HeVc_Compress_Logs') # This will be username na ...
+                    InlineKeyboardButton('Show Bot Status', url=f'https://t.me/{LOG_CHANNEL}') # This will be username na ...
                 ]
             ]
         ),
