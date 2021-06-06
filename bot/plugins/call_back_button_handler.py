@@ -55,7 +55,7 @@ async def button(bot, update: CallbackQuery):
                     except:
                         pass
                     try:
-                        await update.message.edit_text("🚦🚦 Last Process Stopped 🚦🚦")
+                        await update.message.edit_text("** Last Process Stopped ❗️**")
                         chat_id = LOG_CHANNEL
                         utc_now = datetime.datetime.utcnow()
                         ist_now = utc_now + datetime.timedelta(minutes=30, hours=5)
@@ -63,7 +63,7 @@ async def button(bot, update: CallbackQuery):
                         bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
                         bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
                         now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
-                        await bot.send_message(chat_id, f"**Last Process Cancelled, Bot is Free Now !!** \n\nProcess Done at `{now}`", parse_mode="markdown")
+                        await bot.send_message(chat_id, f"**Last Process Cancelled, Bot is Free Now !!** \n\n**Process Done at `{now}**\n\n ♻@Hiroshi_BotUpdates`", parse_mode="markdown")
                     except:
                         pass
             else:
