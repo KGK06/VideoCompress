@@ -61,7 +61,7 @@ async def incoming_start_message_f(bot, update):
                await bot.send_message(
                    chat_id=update.chat.id,
                    text="Sorry Sir, You are Banned to use me. Contact my [Support Group](https://t.me/ML_SupportGroup).",
-                   parse_mode="markdown",
+                   parse_mode="Markdown",
                    disable_web_page_preview=True
                )
                return
